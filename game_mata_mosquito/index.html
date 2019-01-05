@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Game Over</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+		<!-- Style Css -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img id="game-img" src="imagens/game.png">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<select id="level" class="form-control">
+						<option value="">--Selecione o nível</option>
+						<option value="easy">Fácil</option>
+						<option value="normal">Normal</option>
+						<option value="hard">Difícil</option>
+						<option value="dark-souls">Dark Souls</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<button id="start-btn" type="button" class="btn btn-lg" onclick="startGame()">Iniciar Jogo</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function startGame() {
+				var level = document.getElementById('level').value
+				if(level === "") {
+					alert("Selecione um nível para iniciar o jogo")
+					return false
+				}
+				else {
+					window.location.href = 'app.html?'+level
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

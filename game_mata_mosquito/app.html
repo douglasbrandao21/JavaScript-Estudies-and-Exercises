@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="game.js"></script>
+		<style>
+			html {
+				cursor: url(imagens/mata_mosca.png) 30 30, auto;
+			}
+		</style>
+	</head>
+
+	<body onresize="ajustaTamanhoPalco()">
+
+		<div class="painel">
+
+			<div class="lifes ">
+				<img id="life1" src="imagens/coracao_cheio.png">
+				<img id="life2" src="imagens/coracao_cheio.png">
+				<img id="life3" src="imagens/coracao_cheio.png">
+			</div>
+
+			<div class="timer">
+				Tempo restante: <span id="timer"></span>
+			</div>
+
+		</div>
+
+		<script>
+
+			document.getElementById('timer').innerHTML = time
+
+			var createMob =  setInterval(function() {
+				posRandom()
+			}, timeInterval)
+		</script>
+
+	</body>
+
+
+</html>

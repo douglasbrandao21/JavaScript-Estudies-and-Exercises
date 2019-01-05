@@ -1,0 +1,108 @@
+body {
+	background-image: url(imagens/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* APP GAME */
+.mosquito1 {
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2 {
+	width: 70px;
+	height: 70px;
+}
+
+.mosquito3 {
+	width: 90px;
+	height: 90px;
+}
+
+.sideA {
+	transform: scaleX(1);
+}
+
+.sideB {
+	transform: scaleX(-1);
+}
+
+.painel {
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 0px;
+	left: 0px;
+	border-top: solid 1px white;
+	background-color: #fff;
+	opacity: 0.7;  
+}
+
+.lifes {
+	float: left;
+}
+
+.timer {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* GAME OVER PAGE */
+#game-over-img {
+	display: table;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+
+
+
+#reset-btn {
+	display: table;
+	margin: 0 auto;
+	border-radius: 0;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+#reset-btn:hover {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+
+
+/* INDEX PAGE */
+#start-btn {
+	display: table;
+	margin: 0 auto;
+	border-radius: 0;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+#start-btn:hover {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+
+#game-img {
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+#level {
+	width: 200px;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border-radius: 0;
+}
+
